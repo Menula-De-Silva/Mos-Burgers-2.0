@@ -258,14 +258,14 @@ function page3option1() {
     console.log("Selected Payment Method: " + paymentselector); // Debugging log
 
     // Update styles for selected card
-    document.getElementById("cc1").style.borderWidth = "5px";
-    document.getElementById("cc1").style.borderColor = "blue";
+    document.getElementById("card-credit1").style.borderWidth = "5px";
+    document.getElementById("card-credit1").style.borderColor = "blue";
 
     // Reset styles for other cards
-    document.getElementById("cc2").style.borderColor = "azure";
-    document.getElementById("cc2").style.borderWidth = "0px";
-    document.getElementById("cc3").style.borderColor = "azure";
-    document.getElementById("cc3").style.borderWidth = "0px";
+    document.getElementById("card-credit2").style.borderColor = "azure";
+    document.getElementById("card-credit2").style.borderWidth = "0px";
+    document.getElementById("card-credit3").style.borderColor = "azure";
+    document.getElementById("card-credit3").style.borderWidth = "0px";
 
     // Update details dynamically
     updateDetails();
@@ -277,14 +277,14 @@ function page3option2() {
     console.log("Selected Payment Method: " + paymentselector); // Debugging log
 
     // Update styles for selected card
-    document.getElementById("cc2").style.borderWidth = "5px";
-    document.getElementById("cc2").style.borderColor = "blue";
+    document.getElementById("card-credit2").style.borderWidth = "5px";
+    document.getElementById("card-credit2").style.borderColor = "blue";
 
     // Reset styles for other cards
-    document.getElementById("cc1").style.borderColor = "azure";
-    document.getElementById("cc1").style.borderWidth = "0px";
-    document.getElementById("cc3").style.borderColor = "azure";
-    document.getElementById("cc3").style.borderWidth = "0px";
+    document.getElementById("card-credit1").style.borderColor = "azure";
+    document.getElementById("card-credit1").style.borderWidth = "0px";
+    document.getElementById("card-credit3").style.borderColor = "azure";
+    document.getElementById("card-credit3").style.borderWidth = "0px";
 
     // Update details dynamically
     updateDetails();
@@ -296,14 +296,14 @@ function page3option3() {
     console.log("Selected Payment Method: " + paymentselector); // Debugging log
 
     // Update styles for selected card
-    document.getElementById("cc3").style.borderWidth = "5px";
-    document.getElementById("cc3").style.borderColor = "blue";
+    document.getElementById("card-credit3").style.borderWidth = "5px";
+    document.getElementById("card-credit3").style.borderColor = "blue";
 
     // Reset styles for other cards
-    document.getElementById("cc2").style.borderColor = "azure";
-    document.getElementById("cc2").style.borderWidth = "0px";
-    document.getElementById("cc1").style.borderColor = "azure";
-    document.getElementById("cc1").style.borderWidth = "0px";
+    document.getElementById("card-credit2").style.borderColor = "azure";
+    document.getElementById("card-credit2").style.borderWidth = "0px";
+    document.getElementById("card-credit1").style.borderColor = "azure";
+    document.getElementById("card-credit1").style.borderWidth = "0px";
 
     // Update details dynamically
     updateDetails();
