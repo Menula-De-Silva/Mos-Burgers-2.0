@@ -1,65 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Itim&display=swap');
 
-
-
-#bgcolor{
-    background-color:#ff7c14;
+#bgcolor {
+    background-color: #ff7c14;
 }
 
-.header{
+.header {
     text-align: center;
     font-size: 48px;
     font-family: itim;
-  }
+}
 
-#canvas-header{
+#canvas-header {
     text-align: center;
     font-size: 36px;
     font-family: itim;
-  }
-#select-food-type{
-    width:400px;
-    left:0%;
 }
-#select-food{
-    width:400px;
-    left:0%;
+
+#select-food-type,
+#select-food,
+#food-price {
+    width: 100%; /* Full width on mobile */
+    max-width: 400px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the elements */
 }
-#food-price{
-    width:400px;
-    left:0%;
-}
-.order-deatail-canvas{
+
+.order-deatail-canvas {
     height: auto;
-    overflow-y:visible;
+    overflow-y: visible;
     overflow-x: hidden;
-    width:550px;
-    height:450px;
-    background-color:#ff7c14;
+    width: 90%; /* Responsive width */
+    max-width: 550px; /* Limit width on larger screens */
+    height: auto; /* Adjust height automatically */
+    min-height: 450px; /* Minimum height */
+    background-color: #ff7c14;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-} 
-
-
-
-
+    margin: 0 auto; /* Center the canvas */
+    padding: 20px; /* Add padding for better spacing */
+}
 
 .steps-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;    
-    gap: 10px;               
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #steps-progress1,
 #steps-progress2,
 #steps-progress3,
 #steps-progress4,
-#steps-progress5{
+#steps-progress5 {
     border-radius: 50%;
     width: 10px;
     height: 10px;
@@ -69,102 +64,52 @@
     background-color: rgb(23, 66, 255);
 }
 
-#steps-progress2 {
-    background-color: azure;
-}
-
-#steps-progress3 {
-    background-color: azure;
-}
-
-#steps-progress4 {
-    background-color: azure;
-}
-
+#steps-progress2,
+#steps-progress3,
+#steps-progress4,
 #steps-progress5 {
     background-color: azure;
 }
 
-
-
-
-
-
-#submit{
+#submit {
     display: none;
 }
 
-
-
-
-
-
-
 #page-2 .form-floating {
     margin-bottom: 20px;
-    width:300px; /* Add spacing between fields */
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the form fields */
 }
 
-
-
-#page-2 {
-    overflow-y:visible;
+#page-2,
+#page-3,
+#page-4,
+#page-5 {
+    overflow-y: visible;
     overflow-x: hidden;
-    display: none; /* This keeps the form hidden initially */
-    margin-top: -130px; /* Move the form fields up */
-    position: relative; /* Allows precise control over positioning */
-    z-index: 1; /* Ensure it's visible above other elements */
+    display: none;
+    margin-top: -130px;
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Full width on mobile */
+    max-width: 400px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the sections */
 }
 
-
-#select-how{
-    width:300px;
+#select-how {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the select element */
 }
 
-#page-3{
-    overflow-y:visible;
-    overflow-x: hidden;
-    display: none; /* This keeps the form hidden initially */
-    margin-top: -130px; /* Move the form fields up */
-    position: relative; /* Allows precise control over positioning */
-    z-index: 1; 
+#card-credit1,
+#card-credit2,
+#card-credit3 {
+    width: 100%; /* Full width on mobile */
+    max-width: 300px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center the cards */
 }
-
-
-
-#page-4{
-    overflow-y:visible;
-    overflow-x: hidden;
-    display: none; /* This keeps the form hidden initially */
-    margin-top: -130px; /* Move the form fields up */
-    position: relative; /* Allows precise control over positioning */
-    z-index: 1; 
-}
-
-
-
-
-#page-5{
-    overflow-y:visible;
-    overflow-x: hidden;
-    display: none; /* This keeps the form hidden initially */
-    margin-top: -130px; /* Move the form fields up */
-    position: relative; /* Allows precise control over positioning */
-    z-index: 1; 
-}
-
-
-
-#card-credit1{
-    width:300px;
-}
-#card-credit2{
-    width:300px;
-}
-#card-credit3{
-    width:300px;
-}
-
 
 #points-balance {
     font-size: 3rem;
@@ -176,3 +121,67 @@
     color: #ff4500;
 }
 
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        font-size: 36px; /* Smaller font size for mobile */
+    }
+
+    #canvas-header {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .order-deatail-canvas {
+        width: 95%; /* Slightly smaller width for mobile */
+        min-height: 400px; /* Adjust height for mobile */
+    }
+
+    #select-food-type,
+    #select-food,
+    #food-price,
+    #page-2 .form-floating,
+    #select-how,
+    #card-credit1,
+    #card-credit2,
+    #card-credit3 {
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* No max-width on mobile */
+    }
+
+    #page-2,
+    #page-3,
+    #page-4,
+    #page-5 {
+        margin-top: -100px; /* Adjust margin for mobile */
+    }
+
+    #points-balance {
+        font-size: 2rem; /* Smaller font size for mobile */
+    }
+
+    #message {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 28px; /* Even smaller font size for very small screens */
+    }
+
+    #canvas-header {
+        font-size: 24px; /* Even smaller font size for very small screens */
+    }
+
+    .order-deatail-canvas {
+        width: 100%; /* Full width for very small screens */
+        min-height: 350px; /* Adjust height for very small screens */
+    }
+
+    #page-2,
+    #page-3,
+    #page-4,
+    #page-5 {
+        margin-top: -80px; /* Adjust margin for very small screens */
+    }
+}
